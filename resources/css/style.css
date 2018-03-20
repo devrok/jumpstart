@@ -1,9 +1,48 @@
 /* font-family: 'Open Sans', sans-serif;
 font-family: 'Monoton', cursive; */
 
+html {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+header .navbar {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  margin: 0 1rem;
+  /* color: #777777; */
+}
+
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #399BD1;
+}
+
 
 @media only screen and (min-width: 768px) {
   .navbar-nav {
     flex-direction: row;
   }
+}
+
+.jumbotron {
+  height: auto;
+  text-align: center;
+  padding: 11.85rem auto;
+}
+/*
+.jumbotron .container {
+  padding: 7.85rem auto;
+} */
+
+.jumbotron-bike {
+  background-image: url("../images/jumbotron-bike.jpg");
 }
