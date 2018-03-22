@@ -29,9 +29,26 @@ header.container-fluid {
   color: #399BD1;
 }
 
-@media only screen and (min-width: 768px) {
+header a.navbar-brand {
+  padding-top: 0;
+  padding-bottom: ;
+  margin-right: 0;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+.navbar-brand {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
   .navbar-nav {
-    flex-direction: row;
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    display: none;
   }
 }
 
@@ -42,6 +59,7 @@ header.container-fluid {
 .jumbotron h1 {
   font-family: Monoton;
   font-size: 7.1rem;
+
   color: white;
   text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -50,6 +68,11 @@ header.container-fluid {
   margin-top: 11.85rem;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
 }
 
 .jumbotron p {
@@ -85,11 +108,11 @@ header.container-fluid {
   background-size: cover;
 }
 
-h2, h3, h4 {
+strong, h3, h4 {
   font-weight: bold;
 }
 
-h2 {
+strong {
   font-size:2.5rem;
 }
 
@@ -101,7 +124,6 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
-  margin-top: 1.3rem;
 }
 
 .categories h4{
@@ -118,6 +140,11 @@ main span, p {
   height: auto;
   display: block;
   overflow: hidden;
+  opacity: 0.7;
+}
+
+.projects .image-container {
+  margin-bottom: 1.3rem;
 }
 
 footer {
